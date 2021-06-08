@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dinosaur{% endblock %}
+
+{% block body %}
+    <h1>Dinosaur</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ dinosaur.id }}</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{ dinosaur.name }}</td>
+            </tr>
+            <tr>
+                <th>TypeSpecies</th>
+                <td>{{ dinosaur.typeSpecies }}</td>
+            </tr>
+            <tr>
+                <th>Size</th>
+                <td>{{ dinosaur.size }}</td>
+            </tr>
+            <tr>
+                <th>Weight</th>
+                <td>{{ dinosaur.weight }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('dinosaur_index') }}">back to list</a>
+
+    <a href="{{ path('dinosaur_edit', {'id': dinosaur.id}) }}">edit</a>
+
+    {{ include('dinosaur/_delete_form.html.twig') }}
+{% endblock %}
