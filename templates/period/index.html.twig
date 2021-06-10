@@ -11,6 +11,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Years</th>
+                <th>Era</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -20,6 +21,7 @@
                 <td>{{ period.id }}</td>
                 <td>{{ period.name }}</td>
                 <td>{{ period.years }}</td>
+                <td>{{ period.era.name }}</td>
                 <td>
                     <a href="{{ path('period_show', {'id': period.id}) }}">show</a>
                     <a href="{{ path('period_edit', {'id': period.id}) }}">edit</a>

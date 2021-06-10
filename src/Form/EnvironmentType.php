@@ -13,7 +13,6 @@ class EnvironmentType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('dinosaurs')
         ;
     }
 

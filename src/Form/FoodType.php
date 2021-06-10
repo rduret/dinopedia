@@ -13,7 +13,6 @@ class FoodType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('dinosaurs')
         ;
     }
 

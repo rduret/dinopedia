@@ -13,7 +13,6 @@ class LocalizationType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('dinosaurs')
         ;
     }
 

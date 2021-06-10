@@ -16,10 +16,10 @@ class DinosaurType extends AbstractType
             ->add('typeSpecies')
             ->add('size')
             ->add('weight')
-            ->add('period')
-            ->add('food')
-            ->add('environment')
-            ->add('localization')
+            ->add('period', null, ['choice_label' => 'name'])
+            ->add('food', null, ['choice_label' => 'name'])
+            ->add('environment', null, ['choice_label' => 'name'])
+            ->add('localization', null, ['choice_label' => 'name'])
         ;
     }
 

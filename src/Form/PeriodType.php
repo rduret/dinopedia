@@ -14,7 +14,7 @@ class PeriodType extends AbstractType
         $builder
             ->add('name')
             ->add('years')
-            ->add('era')
+            ->add('era', null , ['choice_label' => 'name'])
         ;
     }
 
